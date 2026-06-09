@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NovaMed Clinic – Advanced healthcare with compassion. Book appointments with top specialists in cardiology, neurology, oncology and more." />
+  <meta name="theme-color" content="#0B0F14" />
+  <title>NovaMed Clinic – Advanced Healthcare With Compassion</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="NovaMed Home">
+        <span class="logo-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="18" r="17" stroke="url(#logoGrad)" stroke-width="2"/>
+            <path d="M18 10v16M10 18h16" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00D4FF"/>
+                <stop offset="1" stop-color="#4F46E5"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="logo-text">Nova<em>Med</em></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#doctors" class="nav-link">Doctors</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#appointment" class="nav-cta-btn">Book Appointment</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home" aria-label="Hero section">
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>
+
+    <!-- Cursor light trail -->
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot" aria-hidden="true"></span>
+        Trusted by 25,000+ Patients
+      </div>
+
+      <h1 class="hero-headline reveal-up delay-1">
+        Advanced Healthcare<br />
+        <span class="gradient-text">with Compassion</span>
+      </h1>
+
+      <p class="hero-sub reveal-up delay-2">
+        World-class specialists. Cutting-edge diagnostics. Personalised care — 
+        all under one roof. Your wellbeing is our singular purpose.
+      </p>
+
+      <div class="hero-actions reveal-up delay-3">
+        <a href="#appointment" class="btn-primary ripple">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Book Appointment
+        </a>
+        <a href="#about" class="btn-ghost ripple">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+          Learn More
+        </a>
+      </div>
+
+      <div class="hero-stats reveal-up delay-4" aria-label="Key statistics">
+        <div class="hero-stat">
+          <strong>18+</strong>
+          <span>Years of Excellence</span>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat">
+          <strong>120+</strong>
+          <span>Specialists</span>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat">
+          <strong>98%</strong>
+          <span>Patient Satisfaction</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorative floating elements -->
+    <div class="float-card float-card-1 reveal-fade" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+      <div>
+        <small>Live Monitoring</small>
+        <strong>All Vitals Stable</strong>
+      </div>
+    </div>
+    <div class="float-card float-card-2 reveal-fade" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <div>
+        <small>Certified Facility</small>
+        <strong>ISO 9001:2015</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about section" id="about" aria-labelledby="aboutHeading">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Left: visual -->
+        <div class="about-visual reveal-left">
+          <div class="about-img-frame">
+            <div class="about-img-placeholder" aria-label="Modern clinic interior">
+              <svg width="80" height="80" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                <circle cx="40" cy="30" r="18" stroke="url(#abGrad)" stroke-width="2"/>
+                <path d="M40 20v20M30 30h20" stroke="url(#abGrad)" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M16 66c0-13.255 10.745-24 24-24s24 10.745 24 24" stroke="url(#abGrad)" stroke-width="2" stroke-linecap="round"/>
+                <defs>
+                  <linearGradient id="abGrad" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00D4FF"/>
+                    <stop offset="1" stop-color="#4F46E5"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span>World-Class Facility</span>
+            </div>
+            <div class="about-accent-card" aria-hidden="true">
+              <span class="stat-num" data-count="25000">0</span>+
+              <small>Lives Impacted</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: text -->
+        <div class="about-text reveal-right">
+          <p class="section-eyebrow" id="aboutHeading">Who We Are</p>
+          <h2 class="section-title">Pioneering Medicine<br /><span class="gradient-text">Since 2006</span></h2>
+          <p class="section-body">
+            NovaMed was founded on a simple but radical belief: every patient deserves 
+            the same standard of care as the most privileged. Our multidisciplinary team 
+            of over 120 specialists combines clinical mastery with the warmth of a family 
+            practice — powered by AI-assisted diagnostics and the latest medical technology.
+          </p>
+
+          <div class="about-cards">
+            <div class="about-card glass-card">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+              <div>
+                <strong>Our Mission</strong>
+                <p>To deliver accessible, evidence-based healthcare that transforms lives and builds healthier communities.</p>
+              </div>
+            </div>
+            <div class="about-card glass-card">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              <div>
+                <strong>Our Vision</strong>
+                <p>To be the global benchmark for integrating compassionate care with advanced medical innovation.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-counters" aria-label="Statistics">
+            <div class="counter-item">
+              <strong class="stat-num" data-count="120">0</strong><span>+</span>
+              <small>Specialists</small>
+            </div>
+            <div class="counter-item">
+              <strong class="stat-num" data-count="18">0</strong><span>+</span>
+              <small>Years Active</small>
+            </div>
+            <div class="counter-item">
+              <strong class="stat-num" data-count="98">0</strong><span>%</span>
+              <small>Satisfaction</small>
+            </div>
+            <div class="counter-item">
+              <strong class="stat-num" data-count="40">0</strong><span>+</span>
+              <small>Awards Won</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="services section" id="services" aria-labelledby="servicesHeading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">What We Offer</p>
+        <h2 class="section-title" id="servicesHeading">Specialised <span class="gradient-text">Services</span></h2>
+        <p class="section-subtitle">From preventive screenings to complex surgical interventions, our comprehensive care programmes cover every stage of your health journey.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service-card glass-card tilt-card reveal-up" tabindex="0" aria-label="Cardiology service">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>Cardiology</h3>
+          <p>Advanced cardiac care including echocardiography, stress testing, and interventional procedures for heart health.</p>
+          <span class="service-tag">Heart &amp; Vascular</span>
+        </article>
+
+        <article class="service-card glass-card tilt-card reveal-up delay-1" tabindex="0" aria-label="Neurology service">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2a2.5 2.5 0 0 1 5 0v14.5a2.5 2.5 0 0 1-5 0V2z"/><path d="M9.5 6.5H7a3.5 3.5 0 0 0 0 7h2.5"/><path d="M14.5 6.5H17a3.5 3.5 0 0 1 0 7h-2.5"/></svg>
+          </div>
+          <h3>Neurology</h3>
+          <p>Comprehensive brain and nervous system care — from epilepsy management to stroke rehabilitation and memory clinics.</p>
+          <span class="service-tag">Brain &amp; Nerves</span>
+        </article>
+
+        <article class="service-card glass-card tilt-card reveal-up delay-2" tabindex="0" aria-label="Oncology service">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+          </div>
+          <h3>Oncology</h3>
+          <p>Multidisciplinary cancer care with precision oncology, targeted therapies, immunotherapy, and palliative support.</p>
+          <span class="service-tag">Cancer Care</span>
+        </article>
+
+        <article class="service-card glass-card tilt-card reveal-up delay-3" tabindex="0" aria-label="Orthopaedics service">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <h3>Orthopaedics</h3>
+          <p>Joint replacements, sports injury rehabilitation, spinal surgery, and advanced bone health treatments.</p>
+          <span class="service-tag">Bone &amp; Joint</span>
+        </article>
+
+        <article class="service-card glass-card tilt-card reveal-up delay-1" tabindex="0" aria-label="Diagnostics service">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Advanced Diagnostics</h3>
+          <p>AI-enhanced MRI, CT, PET scans, genomic profiling, and same-day pathology for faster, accurate diagnoses.</p>
+          <span class="service-tag">Imaging &amp; Lab</span>
+        </article>
+
+        <article class="service-card glass-card tilt-card reveal-up delay-2" tabindex="0" aria-label="Paediatrics service">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Paediatrics</h3>
+          <p>Dedicated children's health services with paediatric specialists, neonatal intensive care, and child-friendly environments.</p>
+          <span class="service-tag">Child Health</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DOCTORS ===================== -->
+  <section class="doctors section" id="doctors" aria-labelledby="doctorsHeading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Our Team</p>
+        <h2 class="section-title" id="doctorsHeading">Meet Our <span class="gradient-text">Specialists</span></h2>
+        <p class="section-subtitle">Our physicians hold fellowships from the world's most prestigious institutions and bring decades of combined clinical expertise.</p>
+      </div>
+
+      <div class="doctors-grid">
+
+        <article class="doctor-card glass-card reveal-up" aria-label="Dr. Arjun Mehta, Cardiologist">
+          <div class="doctor-photo" aria-hidden="true">
+            <div class="doctor-photo-placeholder">
+              <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="rgba(0,212,255,0.6)" stroke-width="1.2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div class="doctor-badge">Cardiology</div>
+          </div>
+          <div class="doctor-info">
+            <h3>Dr. Arjun Mehta</h3>
+            <p class="doctor-title">Senior Cardiologist</p>
+            <p class="doctor-credentials">MBBS · MD · DM Cardiology<br/>Harvard Medical Fellow</p>
+            <div class="doctor-social" aria-label="Social links">
+              <a href="#" aria-label="LinkedIn" class="social-link">in</a>
+              <a href="#" aria-label="Twitter/X" class="social-link">𝕏</a>
+              <a href="#" aria-label="Email" class="social-link">@</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="doctor-card glass-card reveal-up delay-1" aria-label="Dr. Priya Nair, Neurologist">
+          <div class="doctor-photo" aria-hidden="true">
+            <div class="doctor-photo-placeholder">
+              <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="rgba(79,70,229,0.6)" stroke-width="1.2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div class="doctor-badge">Neurology</div>
+          </div>
+          <div class="doctor-info">
+            <h3>Dr. Priya Nair</h3>
+            <p class="doctor-title">Chief Neurologist</p>
+            <p class="doctor-credentials">MBBS · MD · DM Neurology<br/>Johns Hopkins Fellow</p>
+            <div class="doctor-social" aria-label="Social links">
+              <a href="#" aria-label="LinkedIn" class="social-link">in</a>
+              <a href="#" aria-label="Twitter/X" class="social-link">𝕏</a>
+              <a href="#" aria-label="Email" class="social-link">@</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="doctor-card glass-card reveal-up delay-2" aria-label="Dr. Rohan Kapoor, Oncologist">
+          <div class="doctor-photo" aria-hidden="true">
+            <div class="doctor-photo-placeholder">
+              <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="rgba(16,185,129,0.6)" stroke-width="1.2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div class="doctor-badge">Oncology</div>
+          </div>
+          <div class="doctor-info">
+            <h3>Dr. Rohan Kapoor</h3>
+            <p class="doctor-title">Oncology Director</p>
+            <p class="doctor-credentials">MBBS · MD · DNB Oncology<br/>Mayo Clinic Fellow</p>
+            <div class="doctor-social" aria-label="Social links">
+              <a href="#" aria-label="LinkedIn" class="social-link">in</a>
+              <a href="#" aria-label="Twitter/X" class="social-link">𝕏</a>
+              <a href="#" aria-label="Email" class="social-link">@</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="doctor-card glass-card reveal-up delay-3" aria-label="Dr. Ananya Singh, Orthopaedic Surgeon">
+          <div class="doctor-photo" aria-hidden="true">
+            <div class="doctor-photo-placeholder">
+              <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="rgba(0,212,255,0.6)" stroke-width="1.2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div class="doctor-badge">Orthopaedics</div>
+          </div>
+          <div class="doctor-info">
+            <h3>Dr. Ananya Singh</h3>
+            <p class="doctor-title">Orthopaedic Surgeon</p>
+            <p class="doctor-credentials">MBBS · MS Orthopaedics<br/>Stanford Medical Fellow</p>
+            <div class="doctor-social" aria-label="Social links">
+              <a href="#" aria-label="LinkedIn" class="social-link">in</a>
+              <a href="#" aria-label="Twitter/X" class="social-link">𝕏</a>
+              <a href="#" aria-label="Email" class="social-link">@</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY CHOOSE US ===================== -->
+  <section class="why section" id="why" aria-labelledby="whyHeading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Our Advantage</p>
+        <h2 class="section-title" id="whyHeading">Why Patients <span class="gradient-text">Choose NovaMed</span></h2>
+      </div>
+      <div class="why-grid">
+
+        <div class="why-card glass-card reveal-up" tabindex="0">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>24 / 7 Emergency Care</h3>
+          <p>Round-the-clock access to emergency physicians, trauma surgeons, and critical care nurses — every day, every hour.</p>
+        </div>
+
+        <div class="why-card glass-card reveal-up delay-1" tabindex="0">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>International Accreditation</h3>
+          <p>JCI-accredited and ISO-certified, meeting the highest global benchmarks in clinical quality and patient safety.</p>
+        </div>
+
+        <div class="why-card glass-card reveal-up delay-2" tabindex="0">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3>AI-Assisted Diagnostics</h3>
+          <p>Proprietary AI platforms analyse imaging and lab data in minutes, helping clinicians detect conditions earlier and more accurately.</p>
+        </div>
+
+        <div class="why-card glass-card reveal-up delay-3" tabindex="0">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Multidisciplinary Teams</h3>
+          <p>Complex cases are reviewed by joint specialist panels — cardiologists, radiologists, surgeons — ensuring no detail is missed.</p>
+        </div>
+
+        <div class="why-card glass-card reveal-up delay-1" tabindex="0">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Multilingual Patient Support</h3>
+          <p>Our patient relations team communicates in over 12 languages, ensuring clarity, comfort, and cultural sensitivity.</p>
+        </div>
+
+        <div class="why-card glass-card reveal-up delay-2" tabindex="0">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Concierge-Level Comfort</h3>
+          <p>Private suites, valet parking, gourmet nutrition services, and a patient lounge that feels nothing like a hospital.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== APPOINTMENT ===================== -->
+  <section class="appointment section" id="appointment" aria-labelledby="appointmentHeading">
+    <div class="container">
+      <div class="appointment-wrapper">
+        <div class="appointment-info reveal-left">
+          <p class="section-eyebrow">Get In Touch</p>
+          <h2 class="section-title" id="appointmentHeading">Book Your <span class="gradient-text">Appointment</span></h2>
+          <p class="section-body">Fill the form and our team will confirm your slot within 2 hours. For emergencies, call us directly.</p>
+
+          <div class="appointment-quick-info">
+            <div class="quick-info-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.35a2 2 0 0 1 1.97-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.91-1.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <strong>Emergency Hotline</strong>
+                <span>+91 1800 000 NOVA</span>
+              </div>
+            </div>
+            <div class="quick-info-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <div>
+                <strong>Clinic Hours</strong>
+                <span>Mon–Sat: 8 AM – 9 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="appointment-form-wrap glass-card reveal-right">
+          <form class="appointment-form" id="appointmentForm" novalidate aria-label="Book appointment form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="apptName">Full Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="apptName" name="name" placeholder="Dr. Jane Smith" autocomplete="name" required aria-required="true" />
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="apptPhone">Phone Number <span aria-hidden="true">*</span></label>
+                <input type="tel" id="apptPhone" name="phone" placeholder="+91 98765 43210" autocomplete="tel" required aria-required="true" />
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="apptEmail">Email Address <span aria-hidden="true">*</span></label>
+              <input type="email" id="apptEmail" name="email" placeholder="you@example.com" autocomplete="email" required aria-required="true" />
+              <span class="form-error" aria-live="polite"></span>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="apptService">Department</label>
+                <select id="apptService" name="service" aria-label="Select department">
+                  <option value="">Select Department</option>
+                  <option>Cardiology</option>
+                  <option>Neurology</option>
+                  <option>Oncology</option>
+                  <option>Orthopaedics</option>
+                  <option>Advanced Diagnostics</option>
+                  <option>Paediatrics</option>
+                  <option>General Medicine</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="apptDate">Preferred Date <span aria-hidden="true">*</span></label>
+                <input type="date" id="apptDate" name="date" required aria-required="true" />
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="apptMsg">Message / Symptoms</label>
+              <textarea id="apptMsg" name="message" rows="4" placeholder="Briefly describe your symptoms or reason for visit..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary ripple full-width" aria-label="Submit appointment request">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Request Appointment
+            </button>
+
+            <p class="form-disclaimer">Your information is encrypted and never shared with third parties.</p>
+
+            <!-- Success message -->
+            <div class="form-success" id="formSuccess" role="alert" aria-live="assertive" style="display:none">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Appointment requested! We'll confirm within 2 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testimonials section" id="testimonials" aria-labelledby="testimonialsHeading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Patient Stories</p>
+        <h2 class="section-title" id="testimonialsHeading">What Our <span class="gradient-text">Patients Say</span></h2>
+      </div>
+
+      <div class="testimonial-carousel" role="region" aria-label="Patient testimonials carousel">
+        <div class="testimonial-track" id="testimonialTrack">
+
+          <article class="testimonial-card glass-card" aria-label="Testimonial from Vikram Sharma">
+            <div class="stars" aria-label="5 out of 5 stars" role="img">★★★★★</div>
+            <blockquote>
+              <p>"After three misdiagnoses elsewhere, NovaMed's team identified my condition within 24 hours using their AI diagnostic suite. I owe them my life. The care was outstanding — clinical excellence matched by genuine warmth."</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">VS</div>
+              <div>
+                <strong>Vikram Sharma</strong>
+                <span>Cardiology Patient</span>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card glass-card" aria-label="Testimonial from Meera Joshi">
+            <div class="stars" aria-label="5 out of 5 stars" role="img">★★★★★</div>
+            <blockquote>
+              <p>"The oncology team guided our family through every step of my mother's treatment with compassion and transparency. The multidisciplinary rounds kept everyone aligned. A truly exceptional institution."</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">MJ</div>
+              <div>
+                <strong>Meera Joshi</strong>
+                <span>Oncology Family Member</span>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card glass-card" aria-label="Testimonial from Arif Khan">
+            <div class="stars" aria-label="5 out of 5 stars" role="img">★★★★★</div>
+            <blockquote>
+              <p>"My knee replacement was a seamless experience. Dr. Singh explained every option clearly, the surgery was flawless, and the rehab team had me walking in four days. The facility feels more like a five-star hotel."</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">AK</div>
+              <div>
+                <strong>Arif Khan</strong>
+                <span>Orthopaedics Patient</span>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card glass-card" aria-label="Testimonial from Sunita Reddy">
+            <div class="stars" aria-label="5 out of 5 stars" role="img">★★★★★</div>
+            <blockquote>
+              <p>"From the multilingual reception staff to the senior consultants, everyone made my international medical trip stress-free. The digital patient portal kept my home doctor updated in real time. Highly recommend."</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">SR</div>
+              <div>
+                <strong>Sunita Reddy</strong>
+                <span>International Patient</span>
+              </div>
+            </footer>
+          </article>
+
+        </div>
+
+        <div class="carousel-controls" aria-label="Carousel controls">
+          <button class="carousel-btn" id="carouselPrev" aria-label="Previous testimonial">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Testimonial navigation dots"></div>
+          <button class="carousel-btn" id="carouselNext" aria-label="Next testimonial">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="faq section" id="faq" aria-labelledby="faqHeading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Common Questions</p>
+        <h2 class="section-title" id="faqHeading">Frequently <span class="gradient-text">Asked Questions</span></h2>
+      </div>
+
+      <div class="faq-list" role="list">
+
+        <div class="faq-item reveal-up" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq1">
+            How do I book an appointment at NovaMed?
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" id="faq1" role="region">
+            <p>You can book directly through the form on this page, call our 24/7 helpline at +91 1800 000 NOVA, or use our mobile app. All bookings are confirmed within 2 hours during business hours, and immediately for emergencies.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal-up delay-1" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq2">
+            What insurance plans does NovaMed accept?
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" id="faq2" role="region">
+            <p>NovaMed is empanelled with all major insurance providers including Star Health, Niva Bupa, HDFC Ergo, and government schemes like Ayushman Bharat. Our billing team offers cashless processing for over 200 TPA networks.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal-up delay-2" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq3">
+            Are second opinions available for complex diagnoses?
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" id="faq3" role="region">
+            <p>Absolutely. We actively encourage second opinions and have a dedicated Tumour Board and Cardiac Conference that review complex cases weekly. You can also upload previous reports via our patient portal for remote expert review.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal-up delay-3" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq4">
+            What are the visiting hours for admitted patients?
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" id="faq4" role="region">
+            <p>Standard visiting hours are 10 AM – 12 PM and 5 PM – 8 PM daily. ICU visits are permitted in 30-minute windows by prior arrangement with the nursing station. One attendant per patient may stay overnight in our private rooms.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal-up" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq5">
+            Does NovaMed offer telemedicine consultations?
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" id="faq5" role="region">
+            <p>Yes. Video consultations are available with all departments, Monday through Sunday, 9 AM – 7 PM. Follow-up appointments, prescription renewals, and minor-issue triage can all be handled remotely via our encrypted video platform.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact section" id="contact" aria-labelledby="contactHeading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Find Us</p>
+        <h2 class="section-title" id="contactHeading">Get In <span class="gradient-text">Touch</span></h2>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info column -->
+        <div class="contact-info reveal-left">
+
+          <div class="contact-card glass-card">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <strong>Address</strong>
+              <p>NovaMed Medical Tower, Sector 18,<br />Gurugram, Haryana 122015, India</p>
+            </div>
+          </div>
+
+          <div class="contact-card glass-card">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.35a2 2 0 0 1 1.97-2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6.29 6.29l.91-1.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div>
+              <strong>Phone</strong>
+              <p>+91 1800 000 NOVA (6682)<br />+91 124 456 7890</p>
+            </div>
+          </div>
+
+          <div class="contact-card glass-card">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div>
+              <strong>Email</strong>
+              <p>hello@novamed.in<br />appointments@novamed.in</p>
+            </div>
+          </div>
+
+          <div class="social-row" aria-label="Social media links">
+            <a href="#" class="social-icon-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter / X">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Map placeholder -->
+        <div class="contact-map glass-card reveal-right" aria-label="Map showing NovaMed location">
+          <div class="map-placeholder">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(0,212,255,0.5)" stroke-width="1.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <p>Interactive Map</p>
+            <small>Sector 18, Gurugram, Haryana</small>
+            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn-ghost-sm ripple">
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo" aria-label="NovaMed Home">
+            <span class="logo-icon" aria-hidden="true">
+              <svg width="30" height="30" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="url(#fLogoGrad)" stroke-width="2"/><path d="M18 10v16M10 18h16" stroke="url(#fLogoGrad)" stroke-width="2.5" stroke-linecap="round"/><defs><linearGradient id="fLogoGrad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop stop-color="#00D4FF"/><stop offset="1" stop-color="#4F46E5"/></linearGradient></defs></svg>
+            </span>
+            <span class="logo-text">Nova<em>Med</em></span>
+          </a>
+          <p>Pioneering healthcare with compassion since 2006. JCI Accredited. ISO 9001:2015 Certified.</p>
+          <div class="footer-badges" aria-label="Certifications">
+            <span class="badge-chip">JCI Accredited</span>
+            <span class="badge-chip">ISO Certified</span>
+            <span class="badge-chip">NABH</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul role="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#doctors">Our Doctors</a></li>
+            <li><a href="#testimonials">Patient Stories</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Departments</h4>
+          <ul role="list">
+            <li><a href="#services">Cardiology</a></li>
+            <li><a href="#services">Neurology</a></li>
+            <li><a href="#services">Oncology</a></li>
+            <li><a href="#services">Orthopaedics</a></li>
+            <li><a href="#services">Diagnostics</a></li>
+            <li><a href="#services">Paediatrics</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul role="list" class="footer-contact-list">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Sector 18, Gurugram, HR
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.35a2 2 0 0 1 1.97-2.18h3c.92 0 1.72.64 1.98 1.54.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11l-.91.91A16 16 0 0 0 13.09 18l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +91 1800 000 NOVA
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              hello@novamed.in
+            </li>
+          </ul>
+          <a href="#appointment" class="btn-primary-sm ripple" style="margin-top:1.2rem;display:inline-flex;gap:.5rem;align-items:center;">Book Now</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="footerYear"></span> NovaMed Clinic. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
